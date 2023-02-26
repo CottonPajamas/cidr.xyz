@@ -1,6 +1,6 @@
-import './style.scss';
+import './style.css';
+import { Netmask } from './netmask';
 
-import { Netmask } from 'netmask';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
@@ -8,7 +8,7 @@ class IPAddress extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      octets: [10, 88, 135, 144],
+      octets: [10, 0, 0, 1],
       cidr: 28
     };
     this.handleChange = this.handleChange.bind(this);
@@ -143,11 +143,11 @@ class IPAddress extends Component {
           </span>
           <span className="first">
             <span className="value">{details.first}</span>
-            <span className="label">First Usable IP</span>
+            <span className="label">First IP</span>
           </span>
           <span className="last">
             <span className="value">{details.last}</span>
-            <span className="label">Last Usable IP</span>
+            <span className="label">Last IP</span>
           </span>
           <span className="count">
             <span className="value">{details.size.toLocaleString()}</span>

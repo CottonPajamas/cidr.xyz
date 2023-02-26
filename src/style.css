@@ -1,0 +1,118 @@
+@import url('./fonts/font.css');
+ body {
+	 background: #eee;
+	 font-family: 'Ubuntu', sans-serif;
+}
+ body header {
+	 margin-bottom: 30px;
+	 margin-left: 40px;
+}
+ body header h1 {
+	 font-size: modular-scale(2);
+}
+ body header h1 small {
+	 text-transform: uppercase;
+	 color: #669;
+	 display: block;
+}
+ body header p {
+	 margin-right: 90px;
+	 font-size: modular-scale(-1);
+}
+ body div.ip-address {
+	 text-align: center;
+	 font-family: 'Ubuntu Mono', monospace;
+}
+ body div.ip-address div {
+	 margin-top: 65px;
+}
+ body div.ip-address div.address input {
+	 width: 2.5em;
+	 font-size: 2.7em;
+	 text-align: center;
+	 border: 0px;
+	 border-radius: 3px;
+}
+ body div.ip-address div.address span.octet span.dot {
+	 font-size: 2.7em;
+	 text-align: center;
+	 padding: 0.1em 0.13em;
+}
+ body div.ip-address div.address span.octet:nth-child(1) input.octet {
+	 background-color: #a101a6;
+}
+ body div.ip-address div.address span.octet:nth-child(2) input.octet {
+	 background-color: #d9005b;
+}
+ body div.ip-address div.address span.octet:nth-child(3) input.octet {
+	 background-color: #84e900;
+}
+ body div.ip-address div.address span.octet:nth-child(4) input.octet {
+	 background-color: #cff700;
+}
+ body div.ip-address div.address input.cidr {
+	 background-color: #aaa;
+}
+ body div.ip-address div.bits ol {
+	 display: inline;
+	 padding-left: 0px;
+	 padding-right: 15px;
+}
+ body div.ip-address div.bits ol li.octet {
+	 display: inline;
+}
+ body div.ip-address div.bits ol li.octet ol li.bit {
+	 display: inline;
+	 padding: 0.4em 0.6em;
+	 margin-left: -1px;
+	 border: 1px black solid;
+}
+ body div.ip-address div.bits ol li.octet:nth-child(1) ol li.bit.unmasked {
+	 background-color: #eb01f2;
+}
+ body div.ip-address div.bits ol li.octet:nth-child(2) ol li.bit.unmasked {
+	 background-color: #ff2781;
+}
+ body div.ip-address div.bits ol li.octet:nth-child(3) ol li.bit.unmasked {
+	 background-color: #a8ff37;
+}
+ body div.ip-address div.bits ol li.octet:nth-child(4) ol li.bit.unmasked {
+	 background-color: #e1ff45;
+}
+ body div.ip-address div.bits ol li.octet ol li.bit.masked {
+	 background-color: #d0d0d0;
+	 color: #e2e2e2;
+}
+ body div.ip-address div.details span.netmask {
+	 display: inline-block;
+	 width: 20%;
+}
+ body div.ip-address div.details span.first {
+	 display: inline-block;
+	 width: 20%;
+}
+ body div.ip-address div.details span.last {
+	 display: inline-block;
+	 width: 20%;
+}
+ body div.ip-address div.details span.count {
+	 display: inline-block;
+	 width: 20%;
+}
+ body div.ip-address div.details span.value {
+	 font-size: modular-scale(1);
+}
+ body div.ip-address div.details span.label {
+	 display: block;
+	 font-family: 'Ubuntu', sans-serif;
+	 text-transform: uppercase;
+	 font-size: modular-scale(2);
+	 font-weight: bold;
+	 color: #779;
+}
+ body footer {
+	 margin-top: 50px;
+	 text-align: center;
+	 font-size: modular-scale(-1);
+}
+ 
