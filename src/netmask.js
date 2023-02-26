@@ -165,9 +165,9 @@ class Netmask {
       // The host mask, the opposite of the netmask (eg.: 0.0.0.255)
       this.hostmask = long2ip(~this.maskLong);
       // The first usable address of the block
-      this.first = this.bitmask <= 30 ? long2ip(this.netLong + 1) : this.base;
+      this.first = this.bitmask <= 30 ? long2ip(this.netLong) : this.base;
       // The last  usable address of the block
-      this.last = this.bitmask <= 30 ? long2ip((this.netLong + this.size) - 2) : long2ip((this.netLong + this.size) - 1);
+      this.last = this.bitmask <= 30 ? long2ip((this.netLong + this.size) - 1) : long2ip((this.netLong + this.size) - 1);
       // The block's broadcast address: the last address of the block (eg.: 192.168.1.255)
       this.broadcast = this.bitmask <= 30 ? long2ip((this.netLong + this.size) - 1) : undefined;
   }
