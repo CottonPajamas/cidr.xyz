@@ -9,8 +9,8 @@
 Install dependencies and run the development server:
 
 ```bash
-$ yarn
-$ yarn run start
+$ npm install
+$ npm run start
 ```
 
 ## Build
@@ -18,7 +18,7 @@ $ yarn run start
 Manually building the static content into the `dist/` directory can be done with:
 
 ```bash
-$ yarn run build
+$ npm run build
 ```
 
 ## Deployment
